@@ -10,7 +10,7 @@ Partial Public Class _Default
 	Inherits System.Web.UI.Page
 	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 	End Sub
-	Protected Sub ASPxGridView1_HtmlRowPrepared(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridView.ASPxGridViewTableRowEventArgs)
+	Protected Sub ASPxGridView1_HtmlRowPrepared(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridViewTableRowEventArgs)
 		e.Row.Attributes.Add("onclick", "onRowClick(" & e.VisibleIndex & ")")
 	End Sub
 End Class
